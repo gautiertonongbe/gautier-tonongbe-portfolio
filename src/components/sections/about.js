@@ -125,7 +125,49 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Financial Analysis & Valuation (DCF, LBO, Comps)',
+    'M&A & Due Diligence',
+    'ERP Systems (NetSuite, Coupa, SAP FICO, Workiva)',
+    'SOX 404 Compliance & Internal Audit',
+    'Strategic Market Analysis (SWOT, Porter’s Five Forces)',
+    'Data Automation (SQL, Python, Power BI, Tableau)',
+    'Collaboration & Leadership (Jira, Confluence, Asana)',
+    'Languages: English (Fluent), French (Fluent), German (Basic), Fongbe (Native)',
+  ];
+
+  const awards = [
+    'Mandela Washington Fellowship (2021)',
+    'Distinguished Toastmaster (2019)',
+  ];
+
+  const certifications = [
+    'NetSuite Certified SuiteFoundation (2024)',
+    'Coupa Core Implementation Specialist (2024)',
+    'Coupa Expense Management (2024)',
+    'Workiva Platform Certification (2024)',
+  ];
+
+  const education = [
+    {
+      institution: 'University of Notre Dame, Mendoza College of Business',
+      degree: 'MBA, Finance',
+      daterange: 'May 2024',
+      notes: 'Academic Fellowship Recipient',
+    },
+    {
+      institution: 'University of Technology and Management Science, Cotonou, Benin',
+      degree: 'MS, International Management',
+      daterange: 'May 2018',
+      notes: 'Magna Cum Laude',
+    },
+    {
+      institution: 'National School of Administration and Magistracy, Calavi, Benin',
+      degree: 'BBA',
+      daterange: 'Mar 2014',
+      notes: 'Magna Cum Laude',
+    },
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,37 +177,30 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              I'm a dynamic Finance and Strategy professional with over 7 years of global experience in financial operations, M&A, valuation, and strategic planning across consulting, technology, and telecommunications sectors. Expert in SOX compliance, ERP implementations (NetSuite, Coupa), and IPO readiness, delivering scalable solutions for high-growth firms. Fluent in English and French, I thrive in entrepreneurial environments to enhance profitability and investor confidence.
             </p>
-
-            <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few areas of expertise I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          </ul>
+
+          <h3>Awards</h3>
+          <ul className="skills-list">
+            {awards && awards.map((award, i) => <li key={i}>{award}</li>)}
+          </ul>
+
+          <h3>Certifications</h3>
+          <ul className="skills-list">
+            {certifications && certifications.map((cert, i) => <li key={i}>{cert}</li>)}
+          </ul>
+
+          <h3>Education</h3>
+          <ul className="skills-list">
+            {education && education.map((edu, i) => (
+              <li key={i}>{edu.institution}: {edu.degree} ({edu.daterange}, {edu.notes})</li>
+            ))}
           </ul>
         </StyledText>
 
