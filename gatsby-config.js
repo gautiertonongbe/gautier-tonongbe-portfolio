@@ -7,7 +7,6 @@ module.exports = {
       'Gautier Tonongbe is a Finance and Strategy professional with expertise in financial operations, M&A, valuation, and strategic planning.',
     siteUrl: 'https://velvety-peony-55459d.netlify.app', // Your Netlify URL
     image: '/og.png', // Ensure this file exists in static/
-    twitterUsername: '@gautiertonongbe', // Update if you have a Twitter handle, or remove
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -116,7 +115,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-45666519-2', // Replace with your Google Analytics ID or remove
       },
     },
     `gatsby-plugin-netlify`,
