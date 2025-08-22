@@ -5,9 +5,9 @@ module.exports = {
     title: 'Gautier Tonongbe | Finance & Strategy',
     description:
       'Gautier Tonongbe is a Finance and Strategy professional with expertise in financial operations, M&A, valuation, and strategic planning.',
-    siteUrl: 'https://velvety-peony-55459d.netlify.app', // Your Netlify URL
-    image: '/og.png', // Ensure this exists in static/
-    twitterUsername: '@gautiertonongbe', // Update or remove if no Twitter
+    siteUrl: 'https://velvety-peony-55459d.netlify.app',
+    image: '/og.png',
+    twitterUsername: '@gautiertonongbe',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,7 +26,7 @@ module.exports = {
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
         display: 'minimal-ui',
-        icon: 'src/images/logo.png', // Ensure this exists
+        icon: 'src/images/logo.png',
       },
     },
     `gatsby-plugin-offline`,
@@ -116,9 +116,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: ['G-VQCH330R0X'], // Your GA4 Measurement ID
+        trackingIds: ['G-VQCH330R0X'],
         pluginConfig: {
-          head: true, // Place tracking script in <head>
+          head: true,
         },
       },
     },
